@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "horrormod",
+  "version": "1.0-SNAPSHOT",
+  "name": "HorrorMod",
+  "description": "Veri scari horor mot",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/horrormod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.horrormod.client.HorrormodClient"
+    ],
+    "main": [
+      "com.horrormod.Horrormod"
+    ]
+  },
+  "mixins": [
+    "horrormod.mixins.json",
+    {
+      "config": "horrormod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric": "*",
+    "minecraft": "1.20.6"
+  }
+}
