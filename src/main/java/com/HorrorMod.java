@@ -1,7 +1,10 @@
 package com;
 
+import com.horrormod.entity.ModEntities;
+import com.horrormod.entity.custom.CubeEntity;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,5 +23,7 @@ public class HorrorMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+
+		FabricDefaultAttributeRegistry.register(ModEntities.CUBE, CubeEntity.createCubeAttributes());
 	}
 }
