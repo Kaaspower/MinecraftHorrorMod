@@ -19,7 +19,7 @@
 			"com.HorrorMod"
 		],
 		"client": [
-			"com.HorrorModClient"
+			"com.horrormod.HorrorModClient"
 		],
 		"fabric-datagen": [
 			"com.HorrorModDataGenerator"
